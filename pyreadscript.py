@@ -5,7 +5,3 @@ def pyreadscript(filename):
             exec(returnedscript)
     else:
         print("Error: Must be a .pyreadscript file. - ID=1")
-
-# Compatible file
-pyreadscript('script.pyreadscript')
-

@@ -1,7 +1,12 @@
 def pyreadscript(filename):
     if filename.endswith('.pyreadscript'):
         with open(filename, 'r') as file:
-            returnedscript = file.read()
-            exec(returnedscript)
+            exec(file.read())
     else:
-        print("Error: Must be a .pyreadscript file. - ID=1")
+        print('Could not read file, skipping. (FILE IS NOT .pyreadscript)')
+
+def printfilecontents(filename):
+    if filename.endswith('.pyreadscript'):
+        with open(filename, 'r') as file:
+            contents= file.read
+            print(contents)
